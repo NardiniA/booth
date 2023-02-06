@@ -90,5 +90,3 @@ fields:
     max: 
     labelField: text
   label: Social Media
-pages:
-- config/site.config.json

@@ -66,5 +66,3 @@ fields:
     config:
       use_select: false
       min: 1
-pages:
-- config/footer.json

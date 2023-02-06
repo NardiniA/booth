@@ -1,0 +1,55 @@
+---
+label: Pages
+hide_body: true
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+    max: 160
+  label: Page Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 160
+  label: Page Description
+- name: hero
+  type: blocks
+  label: Hero
+  template_types:
+  - banner
+  - banner-breadcrumbs
+  - intro
+  - project-hero-slider
+  config:
+    min: 1
+    max: 1
+  description: Select the first section that appears on each webpage.
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - about
+  - banner
+  - banner-breadcrumbs
+  - call-to-action
+  - clients
+  - contact
+  - gallery-slider
+  - intro
+  - pricing
+  - project-hero-slider
+  - skills
+  - stats
+  - team
+  - testimonials
+  - text-section
+  config:
+    min: 1
+    max: 
