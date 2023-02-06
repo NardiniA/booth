@@ -40,5 +40,3 @@ fields:
       required: true
     default: "/"
   label: Header Button
-pages:
-- config/menus.json

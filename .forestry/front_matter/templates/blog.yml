@@ -38,6 +38,3 @@ fields:
   type: tag_list
   default: []
   label: Tags
-pages:
-- content/blog/5-marketing-productivity-apps-for-your-team.md
-- content/blog/understanding-and-using-negative-space.md
