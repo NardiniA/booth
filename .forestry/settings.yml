@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: CONTENT
 - type: directory
-  path: content/pages
+  path: src/content/pages
   label: Pages
   create: documents
   match: "**/*"
@@ -15,7 +15,7 @@ sections:
   templates:
   - pages
 - type: directory
-  path: content/blog
+  path: src/content/blog
   label: Blog
   create: documents
   match: "**/*"
@@ -24,13 +24,13 @@ sections:
 - type: heading
   label: CONFIG
 - type: document
-  path: config/site.config.json
+  path: src/config/site.config.json
   label: Site Config
 - type: document
-  path: config/menus.json
+  path: src/config/menus.json
   label: Menus
 - type: document
-  path: config/footer.json
+  path: src/config/footer.json
   label: Footer
 upload_dir: ''
 public_path: ''
