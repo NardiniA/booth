@@ -1,0 +1,40 @@
+---
+label: Stats
+hide_body: true
+fields:
+- name: theme
+  type: select
+  default: Primary
+  config:
+    required: true
+    options:
+    - Primary
+    - Primary Dark
+    - Primary Light
+    - Dark
+    - Light
+    - White
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: statistics
+  type: field_group_list
+  fields:
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: label
+    type: text
+    config:
+      required: true
+    label: Label
+  config:
+    min: 1
+    max: 
+    labelField: label
+  label: Statistics

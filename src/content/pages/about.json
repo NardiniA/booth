@@ -1,0 +1,116 @@
+{
+  "title": "About",
+  "description": "This is the about page description",
+  "sections": [
+    {
+      "template": "banner",
+      "title": "<strong>About Us</strong>",
+      "description": "",
+      "bg": ""
+    },
+    {
+      "template": "about",
+      "image": "/v1668022884/about-image_vpdomb.jpg",
+      "configuration": {
+        "theme": "White",
+        "reversed": false
+      },
+      "alt": "About Image 1",
+      "information": {
+        "subtitle": "ABOUT US",
+        "title": "<strong>14 years of successful projects and digital expertise that we can’t wait to share with you.</strong>  ",
+        "text": "Give life form isn't third there form bearing day can't. Which subdue, divide subdue two, there evening. Is firmament, grass own had. Bring man created also bearing set air. Under make seasons third very, isn't subdue third seasons land living his i meat.",
+        "buttons": [
+          {
+            "text": "Contact Us",
+            "href": "/contact",
+            "theme": "Primary",
+            "style": "Solid"
+          }
+        ]
+      }
+    },
+    {
+      "template": "clients",
+      "clients": [
+        {
+          "name": "Google",
+          "url": "https://google.com",
+          "image": "/v1668022535/google_vk0wnf.png"
+        },
+        {
+          "name": "Amazon",
+          "url": "https://amazon.co.uk",
+          "image": "/v1668022514/amazon_uvvcum.png"
+        },
+        {
+          "name": "Slack",
+          "url": "https://slack.com",
+          "image": "/v1668022468/slack_dlaja8.png"
+        },
+        {
+          "name": "Samsung",
+          "url": "https://samsung.com",
+          "image": "/v1668022453/samsung_ohy2tj.png"
+        }
+      ],
+      "theme": "Dark"
+    },
+    {
+      "template": "team",
+      "sectionHeader": {
+        "align": "Center",
+        "subtitle": "Professional",
+        "title": "Our Team",
+        "description": "So upon land can't Together beginning set great us you're had green firmament life. There over were bearing to forth subdue days."
+      },
+      "team": [
+        {
+          "name": "Antonio Nardini",
+          "position": "Web Developer",
+          "image": "/v1668023265/04_y23o2i.jpg",
+          "social": [
+
+          ]
+        },
+        {
+          "name": "John Smith",
+          "image": "/v1668023224/01_a8jrab.jpg",
+          "social": [
+
+          ],
+          "position": "Web Designer"
+        },
+        {
+          "name": "Nelly Preston",
+          "position": "Senior Designer",
+          "image": "/v1668023220/03_yrogaj.jpg",
+          "social": [
+
+          ]
+        }
+      ],
+      "configuration": {
+        "size": "Third"
+      }
+    },
+    {
+      "template": "call-to-action",
+      "title": "<strong>Thousands of People Are Now Using Booth. Join Our Community!</strong>",
+      "text": "Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat omnis ea. Ultrices pellentesque amet tristique feugiat condimentum integer fames.",
+      "subtitle": "",
+      "buttons": [
+        {
+          "text": "Contact Us",
+          "href": "/contact",
+          "theme": "Default",
+          "style": "Solid"
+        }
+      ],
+      "configuration": {
+        "slim": false,
+        "theme": "Primary"
+      }
+    }
+  ]
+}

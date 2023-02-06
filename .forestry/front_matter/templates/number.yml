@@ -1,0 +1,115 @@
+---
+label: Number
+hide_body: true
+display_field: label
+fields:
+- name: base
+  type: include
+  config: {}
+  template: input-base
+  label: Input Base
+- name: type
+  type: text
+  config:
+    required: true
+  label: Type
+  hidden: true
+  default: number
+- name: configuration
+  type: field_group
+  config: {}
+  fields:
+  - name: size
+    type: select
+    default: Full
+    config:
+      required: true
+      options:
+      - Full
+      - Half
+      - Third
+      - Quarter
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Size
+    description: How big do you want the field to be?
+  - name: required
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: boolean
+      label: Value
+      default: true
+    - name: message
+      type: text
+      config:
+        required: false
+      label: Message
+      default: This field is required!
+      showOnly:
+        field: value
+        value: true
+    label: Required
+  - name: minLength
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: number
+      label: Value
+      description: ''
+      default: 
+      required: true
+      config:
+        min: 1
+        max: 
+        step: 1
+    - name: message
+      type: text
+      config:
+        required: false
+      label: Message
+      default: Value is too small
+    label: Minimum Value
+  - name: max
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: number
+      label: Value
+      description: ''
+      default: 
+      required: true
+      config:
+        min: 1
+        max: 
+        step: 1
+    - name: message
+      type: text
+      config:
+        required: false
+      label: Message
+      default: Value is too large.
+    label: Maximum Value
+  - name: pattern
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: text
+      config:
+        required: false
+      label: Value
+    - name: message
+      type: text
+      config:
+        required: false
+        min: 1
+      label: Message
+    label: Pattern
+  label: Configuration

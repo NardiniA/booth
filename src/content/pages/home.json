@@ -1,0 +1,129 @@
+{
+  "title": "Home",
+  "description": "This is the description for the home page.",
+  "sections": [
+    {
+      "template": "intro",
+      "bg": "/v1663859259/hero-bg-3000_qufppv.jpg",
+      "title": "<strong>An Amazing App <br>That Does It All.</strong>",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis lacus interdum dictum dolor sit amet lectus ornare nunc non.",
+      "buttons": [
+        {
+          "template": "header-button",
+          "href": "/",
+          "text": "Get Started"
+        },
+        {
+          "template": "header-button-icon",
+          "href": "/",
+          "icon": "play"
+        }
+      ]
+    },
+    {
+      "template": "testimonials",
+      "title": "What Our Users Have To Say.",
+      "reviews": [
+        {
+          "name": "Tim Cook",
+          "position": "CEO, Apple",
+          "image": "/v1661365729/user-02_fhwdbk.jpg",
+          "review": "Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum. Laudantium quia consequatur molestias."
+        },
+        {
+          "name": "Sundar Pichai",
+          "position": "CEO, Google",
+          "image": "/v1661365799/user-03_tk9ihz.jpg",
+          "review": "Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis. Quasi voluptas eius distinctio. Atque eos maxime."
+        },
+        {
+          "name": "Satya Nadella",
+          "position": "CEO, Microsoft",
+          "image": "/v1661365816/user-01_xlevqy.jpg",
+          "review": "Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam. Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio. Voluptatem dignissimos ut."
+        },
+        {
+          "name": "Jeff Bezos",
+          "position": "CEO, Amazon",
+          "image": "/v1662383031/user-06_1_zgxuhb.jpg",
+          "review": "Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam."
+        }
+      ],
+      "sectionHeader": {
+        "subtitle": "",
+        "title": "What Our Users Have To Say.",
+        "description": "",
+        "align": "Center"
+      },
+      "theme": "White"
+    },
+    {
+      "template": "stats",
+      "theme": "Primary",
+      "statistics": [
+        {
+          "value": "554k",
+          "label": "Total Downloads"
+        },
+        {
+          "value": "22k",
+          "label": "Daily Visitors"
+        },
+        {
+          "value": "99%",
+          "label": "Positive Rating"
+        },
+        {
+          "value": "526k",
+          "label": "Happy Users"
+        }
+      ]
+    },
+    {
+      "template": "pricing",
+      "title": "Our Easy Pricing Plans for Everyone.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, sit pretium, proin sed massa maecenas tempus, nibh. Ultrices pellentesque amet tristique feugiat condimentum integer fames.",
+      "cards": [
+        {
+          "active": true,
+          "title": "Pro Plan",
+          "price": {
+            "currency": "£",
+            "frequency": "Per Month",
+            "price": "15"
+          },
+          "features": [
+            "5000GB Storage",
+            "Unlimited Bandwidth",
+            "Backup & Restore",
+            "100 Email Accounts"
+          ],
+          "button": {
+            "href": "/",
+            "text": "Get Started"
+          }
+        },
+        {
+          "active": false,
+          "title": "Free",
+          "price": {
+            "currency": "£",
+            "frequency": "Forever",
+            "price": "0"
+          },
+          "features": [
+            "50GB Storage",
+            "50GB Bandwidth",
+            "30 Email Accounts",
+            "Backup & Restore"
+          ],
+          "button": {
+            "href": "/",
+            "text": "Get Started"
+          }
+        }
+      ],
+      "theme": "White"
+    }
+  ]
+}

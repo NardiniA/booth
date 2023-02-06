@@ -1,0 +1,44 @@
+---
+label: Menus
+hide_body: true
+fields:
+- type: field_group_list
+  name: mainMenu
+  label: Main Menu
+  fields:
+  - type: text
+    name: text
+    label: Text
+    config:
+      required: true
+      max: 55
+  - type: text
+    name: href
+    label: URL
+    description: 'Where do you want the link to go?<br>Ex: "https://example.com/about"
+      would be "/about"'
+    config:
+      required: true
+    default: "/"
+  config:
+    labelField: text
+    min: 1
+- type: field_group
+  name: cta
+  fields:
+  - type: text
+    name: text
+    label: Text
+    config:
+      required: true
+  - type: text
+    name: href
+    label: URL
+    description: 'Where do you want the button to go? <br>Ex: "https://example.com/about"
+      would be "/about"'
+    config:
+      required: true
+    default: "/"
+  label: Header Button
+pages:
+- config/menus.json

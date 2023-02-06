@@ -1,0 +1,166 @@
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    --btn-height: var(--vspace-btn);
+    display: inline-block;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: var(--text-size);
+    letter-spacing: 0.02em;
+    height: var(--btn-height);
+    line-height: calc(var(--btn-height) - 4px);
+    padding: 0 3.6rem;
+    margin: 0 0.4rem var(--vspace-0_5) 0;
+    color: var(--color-btn-text);
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: var(--border-radius);
+    background-color: var(--color-btn);
+    border: 2px solid var(--color-btn);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: var(--color-btn-hover);
+    border-color: var(--color-btn-hover);
+    color: var(--color-btn-hover-text);
+    outline: 0;
+}
+
+/* button primary
+ */
+.btn.btn--primary,
+button.btn--primary,
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary,
+input[type="button"].btn--primary {
+    background: var(--color-btn-primary);
+    border-color: var(--color-btn-primary);
+    color: var(--color-btn-primary-text);
+}
+
+.btn.btn--primary:focus,
+button.btn--primary:focus,
+input[type="submit"].btn--primary:focus,
+input[type="reset"].btn--primary:focus,
+input[type="button"].btn--primary:focus,
+.btn.btn--primary:hover,
+button.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+input[type="reset"].btn--primary:hover,
+input[type="button"].btn--primary:hover {
+    background: var(--color-btn-primary-hover);
+    border-color: var(--color-btn-primary-hover);
+    color: var(--color-btn-primary-hover-text);
+}
+
+/* button dark
+ */
+.btn.btn--dark,
+button.btn--dark,
+input[type="submit"].btn--dark,
+input[type="reset"].btn--dark,
+input[type="button"].btn--dark {
+    background: var(--color-gray-19);
+    border-color: var(--color-gray-19);
+    color: var(--color-white);
+}
+
+.btn.btn--dark:focus,
+button.btn--dark:focus,
+input[type="submit"].btn--dark:focus,
+input[type="reset"].btn--dark:focus,
+input[type="button"].btn--dark:focus,
+.btn.btn--dark:hover,
+button.btn--dark:hover,
+input[type="submit"].btn--dark:hover,
+input[type="reset"].btn--dark:hover,
+input[type="button"].btn--dark:hover {
+    background: var(--color-gray-17);
+    border-color: var(--color-gray-17);
+    color: var(--color-gray-5);
+}
+
+/* button modifiers
+ */
+.btn.u-fullwidth,
+button.u-fullwidth {
+    width: 100%;
+    margin-right: 0;
+}
+
+.btn--small,
+button.btn--small {
+    --btn-height: calc(var(--vspace-btn) - 1.6rem);
+}
+
+.btn--medium,
+button.btn--medium {
+    --btn-height: calc(var(--vspace-btn) + 0.8rem);
+}
+
+.btn--large,
+button.btn--large {
+    --btn-height: calc(var(--vspace-btn) + 1.6rem);
+}
+
+.btn--stroke,
+button.btn--stroke {
+    background: transparent !important;
+    font-weight: 500;
+    border: 2px solid var(--color-btn-stroke);
+    color: var(--color-btn-stroke-text);
+
+    &.btn--primary {
+        color: var(--color-btn-primary);
+        border-color: var(--color-btn-primary);
+    }
+
+    &.btn--dark {
+        border: 2px solid var(--color-btn-stroke);
+        color: var(--color-btn-stroke-text);
+    }
+}
+
+.btn--stroke:focus,
+button.btn--stroke:focus,
+.btn--stroke:hover,
+button.btn--stroke:hover {
+    background: var(--color-btn-stroke-hover) !important;
+    border: 2px solid var(--color-btn-stroke-hover);
+    color: var(--color-btn-stroke-hover-text);
+
+    &.btn--primary {
+        background-color: var(--color-btn-primary) !important;
+        border-color: var(--color-btn-primary);
+        color: var(--color-btn-primary-text);
+    }
+
+    &.btn--dark {
+        background: var(--color-btn-stroke-hover) !important;
+        border: 2px solid var(--color-btn-stroke-hover);
+        color: var(--color-btn-stroke-hover-text);
+    }
+}
+
+.btn--pill,
+button.btn--pill {
+    padding-left: 3.2rem !important;
+    padding-right: 3.2rem !important;
+    border-radius: 1000px !important;
+}

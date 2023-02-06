@@ -1,0 +1,15 @@
+{
+  "title": "Elements",
+  "description": "This page is a test for all elements of rich text content.",
+  "sections": [
+    {
+      "template": "banner-breadcrumbs",
+      "theme": "Primary",
+      "title": "Elements"
+    },
+    {
+      "template": "text-section",
+      "content": "# Heading 1\n\nLorem ipsum dolor sit amet, _consectetur adipiscing elit_, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\n## Heading 2\n\n**Ut enim ad minim veniam**, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n### Heading 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna [aliqua.]() \n\n#### Heading 4\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n##### Heading 5\n\nQuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\n###### Heading 6\n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n#### Image\n\n![](/v1661184887/train_ziqjwr.webp)\n\n#### Blockquote\n\n> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n>\n> _Antonio Nardini_\n\n#### Code Block\n\n    const block = (args) => {\n    \tconsole.log(args);\n        return args;\n    }\n\n#### Unordered List\n\n* Item 1\n* Item 2\n* Item 3\n* Item 4\n  * Sub-item 1\n  * Sub-item 2\n* Item 5\n\n#### Ordered List\n\n1. Item 1\n2. Item 2\n3. Item 3\n   1. Sub-item 1\n   2. Sub-item 2\n4. Item 4"
+    }
+  ]
+}

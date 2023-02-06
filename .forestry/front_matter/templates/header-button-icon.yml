@@ -1,0 +1,18 @@
+---
+label: Header Button Icon
+hide_body: true
+display_field: icon
+fields:
+- name: icon
+  type: text
+  config:
+    required: true
+  label: Icon
+- name: href
+  type: text
+  config:
+    required: true
+  label: URL
+  description: 'Where do you want the link to go?<br>Ex: "https://example.com/about"
+    would be "/about"'
+  default: "/"

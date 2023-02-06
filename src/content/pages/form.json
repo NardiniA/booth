@@ -1,0 +1,97 @@
+{
+  "title": "Form",
+  "description": "Form page meta description...",
+  "sections": [
+    {
+      "template": "project-hero-slider",
+      "slides": [
+        {
+          "subtitle": "Web Development",
+          "bg": "/v1663859259/hero-bg-3000_qufppv.jpg",
+          "title": "Booth",
+          "href": "/"
+        },
+        {
+          "subtitle": "Web Design",
+          "bg": "/v1664190000/antoine-barres-jay5BqVyf5A-unsplash_1_qdrjr7.jpg",
+          "title": "Phone Directory",
+          "href": "/"
+        },
+        {
+          "title": "Drive Talk",
+          "subtitle": "Web Development",
+          "href": "/",
+          "bg": "/v1662367407/sample-2400_fu649l.jpg"
+        }
+      ]
+    },
+    {
+      "template": "skills",
+      "configuration": {
+        "theme": "White",
+        "slim": false
+      },
+      "sectionHeader": {
+        "subtitle": "OUR SKILLS",
+        "title": "We build modern experiences",
+        "description": "So seasons deep days forth wherein abundantly void place fruitful you'll isn't fruitful, heaven rule created deep she'd our years unto subdue you morning which fruitful Day so lesser blessed Fruitful multiply every so blessed be."
+      },
+      "skills": [
+        {
+          "name": "HTML",
+          "percent": "90"
+        },
+        {
+          "name": "CSS",
+          "percent": "85"
+        },
+        {
+          "name": "JAVASCRIPT",
+          "percent": "70"
+        },
+        {
+          "name": "API",
+          "percent": "95"
+        }
+      ]
+    },
+    {
+      "template": "call-to-action",
+      "configuration": {
+        "theme": "Dark",
+        "slim": true
+      },
+      "title": "Call To Action",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "subtitle": "",
+      "buttons": [
+
+      ]
+    },
+    {
+      "template": "gallery-slider",
+      "gallery": [
+        {
+          "image": "/v1668023038/team-grp-05_uu7whs.jpg",
+          "alt": "Image 1"
+        },
+        {
+          "image": "/v1668023030/team-grp-04_cqpkq3.jpg",
+          "alt": "Image 2"
+        },
+        {
+          "image": "/v1668023021/team-grp-03_rcpv9w.jpg",
+          "alt": "Image 3"
+        },
+        {
+          "image": "/v1668023015/team-grp-01_oo7uju.jpg",
+          "alt": "Image 4"
+        },
+        {
+          "image": "/v1668023006/team-grp-00_vjjs9a.jpg",
+          "alt": "Image 5"
+        }
+      ]
+    }
+  ]
+}

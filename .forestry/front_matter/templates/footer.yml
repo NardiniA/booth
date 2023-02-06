@@ -1,0 +1,70 @@
+---
+label: Footer
+hide_body: true
+fields:
+- name: showSubscribe
+  type: boolean
+  label: Show Subscribe Section
+  description: Do you want to show an email subscription section?
+- type: field_group
+  name: subscribe
+  label: Subscribe Section
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: text
+    name: subtitle
+    label: Subtitle
+    config:
+      required: true
+  showOnly:
+    field: showSubscribe
+    value: true
+- type: field_group
+  name: main
+  label: Main Section
+  fields:
+  - type: textarea
+    name: description
+    label: Description
+    config:
+      required: true
+  - type: field_group_list
+    name: links
+    label: Footer Links
+    fields:
+    - type: text
+      name: text
+      label: Text
+      config:
+        required: true
+    - type: text
+      name: href
+      label: URL
+      config:
+        required: true
+      default: "/"
+      description: 'Where do you want the link to go?<br>Ex: "https://example.com/about"
+        would be "/about"'
+    config:
+      labelField: text
+      min: 1
+  - type: textarea
+    name: contact
+    label: Contact
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+      required: true
+  - type: list
+    name: copyright
+    label: Copyright
+    config:
+      use_select: false
+      min: 1
+pages:
+- config/footer.json

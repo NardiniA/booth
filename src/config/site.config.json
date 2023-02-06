@@ -1,0 +1,33 @@
+{
+  "logo": "/v1663855106/logo_e2iunw.svg",
+  "logoText": "Phone Number Directory - Antonio Nardini",
+  "metaData": {
+    "description": "Search for phone numbers from BT Phonebook quickly and easily.",
+    "title": "Phone Number Directory - Antonio Nardini",
+    "author": "Antonio Nardini",
+    "keywords": "BT Phonebook, Antonio Nardini, Phone, Number, Phone Number, Phone Number Directory, Directory",
+    "ogImage": "https://res.cloudinary.com/antonio-nardini/image/upload/v1664190000/antoine-barres-jay5BqVyf5A-unsplash_1_qdrjr7.jpg",
+    "theme": "#3F885C",
+    "titleAppend": " | Booth Website Template"
+  },
+  "baseURL": "http://localhost:3000",
+  "postPerPage": 6,
+  "social": [
+    {
+      "href": "/",
+      "text": "Facebook",
+      "icon": "facebook-square"
+    },
+    {
+      "href": "/",
+      "text": "Twitter",
+      "icon": "twitter"
+    },
+    {
+      "href": "/",
+      "text": "Instagram",
+      "icon": "instagram"
+    }
+  ],
+  "baseImageURL": "https://res.cloudinary.com/antonio-nardini/image/upload"
+}

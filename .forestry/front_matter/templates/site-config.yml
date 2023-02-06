@@ -1,0 +1,94 @@
+---
+label: Site Config
+hide_body: true
+display_field: logoText
+fields:
+- type: file
+  name: logo
+  label: Logo
+- type: text
+  name: logoText
+  label: Logo Text
+  config:
+    required: true
+- type: field_group
+  name: metaData
+  label: Meta Data
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+      max: 160
+  - type: text
+    name: description
+    label: Description
+    config:
+      max: 160
+      required: true
+  - type: text
+    name: author
+    label: Author
+    config:
+      required: true
+  - type: text
+    name: keywords
+    label: Keywords
+    config:
+      required: true
+  - type: file
+    name: ogImage
+    label: Social Media Image
+  - name: theme
+    type: color
+    label: Theme Colour
+    config:
+      required: true
+      color_format: Hex
+    description: The theme colour for the website.
+    default: "#3F885C"
+  - name: titleAppend
+    type: text
+    config:
+      required: true
+    label: Title Append
+    description: What do you want to add on the end of the document title?
+    default: " | Booth Website Template"
+- type: text
+  name: baseURL
+  label: Base URL
+  config:
+    required: true
+- name: baseImageURL
+  type: text
+  config:
+    required: true
+  label: Base Image URL
+  default: https://res.cloudinary.com/
+- name: social
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: true
+    label: Text
+    description: The name of the platform (for screen readers)
+  - name: href
+    type: text
+    config:
+      required: true
+    label: URL
+  - name: icon
+    type: text
+    config:
+      required: true
+    label: Icon
+  config:
+    min: 1
+    max: 
+    labelField: text
+  label: Social Media
+pages:
+- config/site.config.json

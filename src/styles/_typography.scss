@@ -1,0 +1,472 @@
+/* ===================================================================
+ * # TYPOGRAPHY 
+ *
+ *
+ * ------------------------------------------------------------------- 
+ * type scale - ratio 1:2 | base: 18px
+ * -------------------------------------------------------------------
+ *
+ * --text-display-3 = (77.40px)
+ * --text-display-2 = (64.50px)
+ * --text-display-1 = (53.75px)
+ * --text-xxxl      = (44.79px)
+ * --text-xxl       = (37.32px)
+ * --text-xl        = (31.10px)
+ * --text-lg        = (25.92px)
+ * --text-md        = (21.60px)
+ * --text-size      = (18.00px) BASE
+ * --text-sm        = (15.00px)
+ * --text-xs        = (12.50px)
+ *
+ * -------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------
+ * ## base type styles
+ * -------------------------------------------------------------------- */
+body {
+    font-family: var(--font-1);
+    font-size: var(--base-font-size);
+    font-weight: 400;
+    line-height: var(--vspace-1);
+    color: var(--color-text);
+}
+
+/* links
+ */
+a {
+    color: var(--color-1);
+    transition: all 0.3s ease-in-out;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: var(--color-2);
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/* headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: var(--font-2);
+    font-weight: 500;
+    color: var(--color-text-dark);
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+.h1 {
+    margin-top: var(--vspace-2_5);
+    margin-bottom: var(--vspace-0_75);
+}
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    margin-top: var(--vspace-2);
+    margin-bottom: var(--vspace-0_75);
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: var(--vspace-1_75);
+    margin-bottom: var(--vspace-0_5);
+}
+
+h1,
+.h1 {
+    font-size: var(--text-display-2);
+    line-height: calc(2.25 * var(--space));
+    letter-spacing: -0.015em;
+}
+
+@media screen and (max-width: 500px) {
+    h1,
+    .h1 {
+        font-size: var(--text-display-1);
+        line-height: calc(1.875 * var(--space));
+    }
+}
+
+h2,
+.h2 {
+    font-size: var(--text-xxl);
+    line-height: calc(1.375 * var(--space));
+    letter-spacing: -0.01em;
+}
+
+h3,
+.h3 {
+    font-size: var(--text-xl);
+    line-height: calc(1.125 * var(--space));
+}
+
+h4,
+.h4 {
+    font-size: var(--text-lg);
+    line-height: var(--vspace-1);
+}
+
+h5,
+.h5 {
+    font-size: var(--text-md);
+    line-height: var(--vspace-0_875);
+}
+
+h6,
+.h6 {
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    line-height: var(--vspace-0_75);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+/* emphasis, italic,
+ * strong, bold and small text
+ */
+em,
+i,
+strong,
+b {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+    line-height: var(--vspace-0_5);
+}
+
+/* blockquotes
+ */
+blockquote {
+    margin: 0 0 var(--vspace-1) 0;
+    padding: var(--vspace-1) var(--vspace-1_5);
+    border-left: 2px solid var(--color-text-dark);
+    background-color: var(--color-gray-2);
+    position: relative;
+
+    > p {
+        font-family: var(--font-1);
+        font-weight: 400;
+        font-size: var(--text-lg);
+        font-style: normal;
+        line-height: var(--vspace-1_25);
+        color: var(--color-text-dark);
+        padding: 0;
+
+        &:last-child:not(:only-child) {
+            display: block;
+            font-family: var(--font-1);
+            font-weight: 400;
+            font-size: var(--text-sm);
+            line-height: var(--vspace-0_75);
+            font-style: normal;
+            color: var(--color-text-light);
+            border: none;
+            margin: 0;
+
+            &::before {
+                content: "\2014 \0020";
+            }
+
+            a, a:visited {
+                color: var(--color-text-light);
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: var(--text-md);
+            line-height: var(--vspace-1);
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: var(--vspace-0_75) var(--vspace-0_75);
+    }
+}
+
+/* figures
+ */
+figure img,
+p img {
+    margin: 0;
+    display: block;
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+figure {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figure img + figcaption {
+    margin-top: var(--vspace-1);
+}
+
+figcaption {
+    /* font-style: italic; */
+    font-size: var(--text-sm);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* preformatted, code
+ */
+var,
+kbd,
+samp,
+code,
+pre {
+    font-family: var(--font-mono);
+}
+
+pre {
+    padding: var(--vspace-0_75) var(--vspace-1) var(--vspace-1);
+    background: var(--color-gray-6);
+    overflow-x: auto;
+}
+
+code {
+    font-size: var(--text-sm);
+    line-height: 1.6rem;
+    margin: 0 0.2rem;
+    padding: calc(((var(--vspace-1) - 1.6rem) / 2) - 0.1rem)
+        calc(0.8rem - 0.1rem);
+    white-space: nowrap;
+    background: var(--color-gray-6);
+    border: 1px solid var(--color-gray-10);
+    color: var(--color-text-dark);
+    border-radius: 3px;
+}
+
+pre > code {
+    display: block;
+    white-space: pre;
+    line-height: var(--vspace-1);
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* deleted text, abbreviation,
+ * & mark text
+ */
+del {
+    text-decoration: line-through;
+}
+
+abbr {
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+    text-decoration: none;
+}
+
+mark {
+    background: var(--color-1-lighter);
+    color: var(--color-black);
+}
+
+/* horizontal rule
+ */
+hr {
+    border: solid var(--color-border);
+    border-width: 0.1rem 0 0;
+    clear: both;
+    margin: var(--vspace-2) 0 calc(var(--vspace-2) - 1px);
+    height: 0;
+}
+
+hr.fancy {
+    border: none;
+    margin: var(--vspace-2) 0;
+    height: var(--vspace-1);
+    text-align: center;
+}
+
+hr.fancy::before {
+    content: "*****";
+    letter-spacing: 0.3em;
+}
+
+/* --------------------------------------------------------------------
+ * ## additional typography & helper classes
+ * -------------------------------------------------------------------- */
+.lead,
+.attention-getter {
+    font-family: var(--font-1);
+    font-weight: 300;
+    font-size: var(--text-md);
+    line-height: var(--vspace-1_25);
+    color: var(--color-text-light);
+}
+
+@media screen and (max-width: 800px) {
+    .lead,
+    .attention-getter {
+        font-size: calc(var(--text-size) * 1.0556);
+        line-height: calc(1.125 * var(--space));
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .lead,
+    .attention-getter {
+        font-size: var(--text-size);
+        line-height: var(--vspace-1);
+    }
+}
+
+.pull-quote {
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.pull-quote blockquote {
+    border: none;
+    margin: 0 auto;
+    max-width: 62rem;
+    padding-top: var(--vspace-2_5);
+    position: relative;
+}
+
+.pull-quote blockquote p {
+    font-weight: 400;
+    color: var(--color-text-dark);
+}
+
+.pull-quote blockquote:before {
+    content: "";
+    display: block;
+    height: var(--vspace-1);
+    width: var(--vspace-1);
+    background-repeat: no-repeat;
+    background: center center;
+    background-size: contain;
+    background-image: url(/icons/icon-quote.svg);
+    transform: translate(-50%, 0, 0);
+    position: absolute;
+    top: var(--vspace-1);
+    left: 50%;
+}
+
+.drop-cap:first-letter {
+    float: left;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: calc(3 * var(--space));
+    line-height: 1;
+    padding: 0 0.125em 0 0;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--color-text-dark);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## theme-specific typography classes
+ * ------------------------------------------------------------------- */
+.body-text-2 {
+    font-size: calc(var(--text-size) * 0.9444);
+    line-height: calc(0.9375 * var(--space));
+}
+
+.body-text-3 {
+    font-size: calc(var(--text-size) * 0.8889);
+    line-height: calc(0.9375 * var(--space));
+}
+
+.text-display-1 {
+    font-size: var(--text-display-1);
+    font-weight: 500;
+    line-height: 1.191;
+    margin-top: 0;
+}
+
+
+.blog-tags {
+    font-size: 1.6rem;
+    margin: var(--vspace-2) 0 0;
+
+    > span {
+        display: inline-block;
+        margin-right: var(--vspace-0_5);
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: inherit;
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.06);
+        border-radius: calc(var(--border-radius) / 2);
+        padding: 0.25rem 0.625rem;
+        margin: 0 var(--vspace-0_375) var(--vspace-0_25) 0;
+        color: var(--text-color-light);
+        transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &:hover {
+            background-color: var(--color-1);
+            color: var(--color-white);
+        }
+    }
+}

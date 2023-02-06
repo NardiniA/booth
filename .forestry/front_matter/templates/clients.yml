@@ -1,0 +1,45 @@
+---
+label: Clients
+hide_body: true
+fields:
+- name: theme
+  type: select
+  default: Dark
+  config:
+    required: true
+    options:
+    - White
+    - Light
+    - Primary
+    - Primary Light
+    - Primary Dark
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: clients
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+  - name: url
+    type: text
+    config:
+      required: true
+    label: URL
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  config:
+    min: 1
+    max: 
+    labelField: name
+  label: Clients

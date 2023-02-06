@@ -1,0 +1,20 @@
+---
+label: Fields
+hide_body: true
+fields:
+- name: fields
+  type: blocks
+  label: Fields
+  template_types:
+  - checkbox
+  - email
+  - hidden
+  - number
+  - radio
+  - select
+  - tel
+  - text-input
+  - textarea
+  config:
+    min: 1
+    max: 

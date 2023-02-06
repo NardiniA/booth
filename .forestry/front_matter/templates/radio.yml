@@ -1,0 +1,73 @@
+---
+label: Radio
+hide_body: true
+display_field: label
+fields:
+- name: label
+  type: text
+  config:
+    required: true
+  label: Label
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: radios
+  type: field_group_list
+  fields:
+  - name: label
+    type: text
+    config:
+      required: true
+    label: Label
+  - name: value
+    type: text
+    config:
+      required: true
+    label: Value
+  - name: size
+    type: select
+    default: Third
+    config:
+      required: true
+      options:
+      - Full
+      - Half
+      - Third
+      - Quarter
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Size
+  config:
+    min: 1
+    max: 
+    labelField: label
+  label: Radios
+- name: configuration
+  type: field_group
+  config: {}
+  fields:
+  - name: required
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: boolean
+      label: Value
+      default: true
+    - name: message
+      type: text
+      config:
+        required: false
+        min: 1
+      label: Message
+      default: This field is requried
+      showOnly:
+        field: value
+        value: true
+    label: Required
+  label: Configuration

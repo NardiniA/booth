@@ -1,0 +1,30 @@
+{
+  "subscribe": {
+    "title": "Sign Up to Our Newsletter.",
+    "subtitle": "Subscribe for updates, special offers and more.",
+    "display": false
+  },
+  "main": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "How it works",
+        "href": "/how-it-works"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "contact": "Do you have a question? Send us a word: <br> <a href=\"mailto:contact@antonionardini.com\" title=\"Contact Me\">contact@antonionardini.com</a>",
+    "copyright": [
+      "© Antonio Nardini 2022",
+      "Designed by <a href=\"https://www.styleshout.com/\">StyleShout</a> and <a href=\"https://antonionardini.com/\">Antonio Nardini<a>"
+    ]
+  },
+  "showSubscribe": true
+}

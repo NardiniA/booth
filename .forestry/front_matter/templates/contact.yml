@@ -1,0 +1,14 @@
+---
+label: Contact
+hide_body: true
+fields:
+- name: sectionHeader
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: form
+  type: include
+  config: {}
+  template: form
+  label: Form

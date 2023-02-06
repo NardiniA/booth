@@ -1,0 +1,249 @@
+{
+  "title": "Fields",
+  "description": "Meta Description.",
+  "sections": [
+    {
+      "template": "banner-breadcrumbs",
+      "theme": "Primary",
+      "title": "Form Fields"
+    },
+    {
+      "template": "contact",
+      "sectionHeader": {
+        "align": "Left",
+        "title": "Fields Test",
+        "description": "This is form is used to test all form fields.",
+        "subtitle": ""
+      },
+      "destination": "contact@antonionardini.com",
+      "fields": [
+        {
+          "template": "checkbox",
+          "type": "checkbox",
+          "configuration": {
+            "required": {
+              "value": true,
+              "message": "This field is required."
+            },
+            "size": "Full"
+          },
+          "label": "Checkbox Label",
+          "name": "Checkbox",
+          "placeholder": "Placeholder ",
+          "value": "Value 1"
+        },
+        {
+          "template": "email",
+          "type": "email",
+          "configuration": {
+            "size": "Half",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid characters",
+              "value": ""
+            }
+          },
+          "label": "Email Test",
+          "name": "Email",
+          "placeholder": "Email Placeholder"
+        },
+        {
+          "template": "number",
+          "type": "number",
+          "configuration": {
+            "size": "Half",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Value is too small",
+              "value": null
+            },
+            "max": {
+              "message": "Value is too large.",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid Characters",
+              "value": ""
+            }
+          },
+          "label": "Number Label",
+          "name": "Number",
+          "placeholder": "Number Placeholder"
+        },
+        {
+          "template": "radio",
+          "configuration": {
+            "required": {
+              "value": true,
+              "message": "This field is requried"
+            }
+          },
+          "label": "Radio Label",
+          "name": "Radio",
+          "radios": [
+            {
+              "label": "Radio 1",
+              "value": "Value 1",
+              "size": "Third"
+            },
+            {
+              "label": "Radio 2",
+              "value": "Value 2",
+              "size": "Third"
+            },
+            {
+              "label": "Radio 3",
+              "value": "Value 3",
+              "size": "Third"
+            }
+          ]
+        },
+        {
+          "template": "select",
+          "configuration": {
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "size": "Half"
+          },
+          "label": "Select Label",
+          "name": "Select",
+          "placeholder": "Select Placeholder",
+          "options": [
+            {
+              "label": "Select 1",
+              "value": "Value 1"
+            },
+            {
+              "label": "Select 2",
+              "value": "Value 2"
+            },
+            {
+              "label": "Select 3",
+              "value": "Value 3"
+            }
+          ]
+        },
+        {
+          "template": "tel",
+          "type": "tel",
+          "configuration": {
+            "size": "Half",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid characters",
+              "value": ""
+            }
+          },
+          "label": "Phone Label",
+          "name": "Phone",
+          "placeholder": "Phone Placeholder"
+        },
+        {
+          "template": "text-input",
+          "type": "text",
+          "configuration": {
+            "size": "Full",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid characters",
+              "value": ""
+            }
+          },
+          "label": "Text Input Label",
+          "name": "Text",
+          "placeholder": "Text Input Placeholder"
+        },
+        {
+          "template": "textarea",
+          "configuration": {
+            "size": "Full",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid characters",
+              "value": ""
+            }
+          },
+          "label": "Textarea Label",
+          "name": "Textarea",
+          "placeholder": "Textarea Placeholder"
+        },
+        {
+          "template": "hidden",
+          "type": "hidden",
+          "configuration": {
+            "size": "Full",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "message": "Invalid characters",
+              "value": ""
+            }
+          },
+          "label": "Hidden Label",
+          "name": "Hidden",
+          "placeholder": "Hidden Placeholder",
+          "defaultValue": "Default Value"
+        }
+      ]
+    }
+  ]
+}

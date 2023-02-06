@@ -1,0 +1,100 @@
+{
+  "title": "Contact",
+  "description": "Contact Us using this form.",
+  "sections": [
+    {
+      "template": "banner-breadcrumbs",
+      "theme": "Primary",
+      "title": "Contact Us"
+    },
+    {
+      "template": "contact",
+      "sectionHeader": {
+        "align": "Left",
+        "title": "Contact Form",
+        "subtitle": "",
+        "description": ""
+      },
+      "destination": "contact@antonionardini.com",
+      "fields": [
+        {
+          "template": "text-input",
+          "type": "text",
+          "configuration": {
+            "size": "Half",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "value": "",
+              "message": "Invalid characters"
+            }
+          },
+          "name": "Name",
+          "placeholder": "Ex: John Smith",
+          "label": "Your Full Name"
+        },
+        {
+          "template": "email",
+          "type": "email",
+          "configuration": {
+            "size": "Half",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "value": "",
+              "message": "Invalid characters"
+            }
+          },
+          "label": "Email Address",
+          "name": "Email",
+          "placeholder": "Ex: email@example.com"
+        },
+        {
+          "template": "textarea",
+          "configuration": {
+            "size": "Full",
+            "required": {
+              "value": true,
+              "message": "This field is required!"
+            },
+            "minLength": {
+              "message": "Not enough characters",
+              "value": null
+            },
+            "maxLength": {
+              "message": "Too many characters",
+              "value": null
+            },
+            "pattern": {
+              "value": "",
+              "message": "Invalid characters"
+            }
+          },
+          "label": "Message",
+          "name": "Message",
+          "placeholder": "Drop us a message here..."
+        }
+      ]
+    }
+  ]
+}

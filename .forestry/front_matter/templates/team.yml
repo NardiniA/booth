@@ -1,0 +1,77 @@
+---
+label: Team
+hide_body: true
+fields:
+- name: sectionHeader
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: team
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+  - name: position
+    type: text
+    config:
+      required: true
+    label: Position
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: social
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: true
+      label: Platform Name
+    - name: icon
+      type: text
+      config:
+        required: true
+      label: Icon
+    - name: url
+      type: text
+      config:
+        required: true
+      label: URL
+      description: The URL of your social media account.
+    config:
+      min: 
+      max: 
+      labelField: name
+    label: Social Media
+  config:
+    min: 1
+    max: 
+    labelField: name
+  label: Team
+- name: configuration
+  type: field_group
+  config: {}
+  fields:
+  - name: size
+    type: select
+    default: Third
+    config:
+      required: true
+      options:
+      - Half
+      - Third
+      - Quarter
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Size
+    description: How big do you want each team item to be?
+  label: Configuration
