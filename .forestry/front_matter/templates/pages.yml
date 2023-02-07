@@ -23,6 +23,8 @@ fields:
   label: Hero
   template_types:
   - intro
+  - banner
+  - banner-breadcrumbs
   config:
     min: 1
     max: 1
@@ -31,6 +33,9 @@ fields:
   label: Sections
   template_types:
   - intro
+  - banner
+  - banner-breadcrumbs
+  - about
   config:
     min: 1
     max: 
