@@ -27,3 +27,4 @@ fields:
     maxSize: 64
   label: Background Image
   description: "(Optional)"
+  
