@@ -1,0 +1,25 @@
+---
+label: Banner Breadcrumbs
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: theme
+  type: select
+  default: Primary
+  config:
+    required: true
+    options:
+    - Primary Light
+    - Primary
+    - Primary Dark
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme

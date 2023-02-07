@@ -1,0 +1,115 @@
+---
+label: About
+hide_body: true
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: alt
+  type: text
+  config:
+    required: true
+  label: Image Description
+- name: information
+  type: field_group
+  config: {}
+  fields:
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Text
+  - name: buttons
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: true
+        max: 55
+      label: Text
+    - name: href
+      type: text
+      config:
+        required: true
+      label: URL
+      default: "/"
+      description: Where do you want this link to go?
+    - name: theme
+      type: select
+      default: Primary
+      config:
+        required: true
+        options:
+        - Default
+        - Primary
+        - Dark
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Theme
+    - name: style
+      type: select
+      default: Solid
+      config:
+        required: true
+        options:
+        - Solid
+        - Stroke
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Style
+    config:
+      min: 
+      max: 2
+      labelField: text
+    label: Buttons
+  label: Information
+- name: configuration
+  type: field_group
+  config: {}
+  fields:
+  - name: theme
+    type: select
+    default: White
+    config:
+      required: true
+      options:
+      - White
+      - Light
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Theme
+  - name: reversed
+    type: boolean
+    label: Reversed
+    description: Do you want to put the image after the text?
+  label: Configuration
