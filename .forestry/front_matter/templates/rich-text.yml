@@ -1,4 +1,60 @@
 ---
 label: Rich Text
 hide_body: true
-fields: []
+fields:
+- name: size
+  type: select
+  default: Full
+  config:
+    required: true
+    options:
+    - Full
+    - Two Thirds
+    - Half
+    - One Third
+    - Quarter
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+- name: colAlign
+  type: select
+  default: Centre
+  config:
+    required: true
+    options:
+    - Left
+    - Centre
+    - Right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Column Alignment
+- name: textAlign
+  type: select
+  default: Left
+  config:
+    required: true
+    options:
+    - Left
+    - Centre
+    - Right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Alignment
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
